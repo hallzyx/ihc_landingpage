@@ -1,0 +1,204 @@
+/* Estilos generales del cuerpo y contenedor */
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    background-color: #f7fafc; /* Equivalente a bg-gray-100 */
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px; /* Ancho máximo común para contenedores */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* Equivalente a px-4 */
+    padding-right: 1rem; /* Equivalente a px-4 */
+    box-sizing: border-box;
+}
+
+/* Header */
+.header-custom {
+    background-color: #162964;
+    color: #FFFFFF;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Equivalente a shadow-md */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem; /* Equivalente a h-20 */
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    height: 3rem; /* Equivalente a h-12 */
+    width: auto;
+}
+
+/* Navegación Principal */
+.main-nav {
+    display: none; /* Oculto en móvil */
+    align-items: center;
+}
+
+/* Se aplica un margen a cada elemento del menú que sigue a otro */
+.main-nav > a + a {
+    margin-left: 1.5rem; /* Equivalente a space-x-6 */
+}
+
+.nav-link {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 150ms ease-in-out;
+}
+
+.nav-link:hover {
+    color: #d1d5db; /* Equivalente a hover:text-gray-300 */
+}
+
+/* Botón del Header */
+.header-button {
+    background-color: #94DDC6;
+    border-color: #4767B0;
+    color: #162964;
+    font-size: 24px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5rem 1.25rem; /* Equivalente a py-2 px-5 */
+    border-radius: 1rem; /* Equivalente a rounded-2xl */
+    transition: background-color 150ms ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.header-button:hover {
+    background-color: rgba(148, 221, 198, 0.8); /* Equivalente a hover:bg-opacity-80 */
+}
+
+/* Botón de Menú Móvil */
+.mobile-menu-button-container {
+    display: flex; /* Se mostrará por defecto y se ocultará en pantallas grandes */
+    align-items: center;
+}
+
+#mobile-menu-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem; /* Equivalente a p-2 */
+    border-radius: 0.375rem; /* Equivalente a rounded-md */
+    color: #9ca3af; /* Equivalente a text-gray-400 */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+
+#mobile-menu-button:hover {
+    color: #ffffff; /* Equivalente a hover:text-white */
+    background-color: #374151; /* Equivalente a hover:bg-gray-700 */
+}
+
+#mobile-menu-button:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #162964; /* Anillo de foco mejorado */
+}
+
+.icon-burger {
+    height: 1.5rem; /* Equivalente a h-6 */
+    width: 1.5rem; /* Equivalente a w-6 */
+    stroke: currentColor;
+}
+
+/* Panel del Menú Móvil */
+#mobile-menu {
+    display: none; /* Oculto por defecto */
+}
+
+#mobile-menu.show {
+    display: block; /* Se muestra cuando tiene la clase 'show' */
+}
+
+.mobile-menu-links {
+    padding: 0.5rem 0.5rem 0.75rem; /* Equivalente a px-2 pt-2 pb-3 */
+}
+
+.mobile-menu-links a {
+    display: block;
+    padding: 0.5rem 0.75rem; /* Equivalente a px-3 py-2 */
+    border-radius: 0.375rem; /* Equivalente a rounded-md */
+    margin-bottom: 0.25rem; /* Equivalente a space-y-1 */
+    transition: background-color 150ms ease-in-out;
+}
+
+.mobile-menu-links .header-button {
+    width: auto;
+    margin-top: 0.5rem; /* Equivalente a mt-2 */
+}
+
+/* Utilidad para lectores de pantalla */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Diseño Responsivo (Media Queries) */
+/* Breakpoint sm (640px) */
+@media (min-width: 640px) {
+    .container {
+        padding-left: 1.5rem; /* Equivalente a sm:px-6 */
+        padding-right: 1.5rem; /* Equivalente a sm:px-6 */
+    }
+    .logo-img {
+       height: 3.5rem; /* Equivalente a sm:h-14 */
+    }
+    .mobile-menu-links {
+        padding-left: 0.75rem; /* Equivalente a sm:px-3 */
+        padding-right: 0.75rem; /* Equivalente a sm:px-3 */
+    }
+}
+
+/* Breakpoint md (768px) */
+@media (min-width: 768px) {
+    .header-content {
+        height: 6rem; /* Equivalente a md:h-24 */
+    }
+    .logo-img {
+        height: 4rem; /* Equivalente a md:h-16 */
+    }
+    .main-nav {
+        display: flex; /* Muestra la navegación de escritorio */
+    }
+    .mobile-menu-button-container {
+        display: none; /* Oculta el botón del menú móvil */
+    }
+    #mobile-menu {
+        display: none !important; /* Asegura que el menú móvil esté oculto */
+    }
+}
+
+/* Breakpoint lg (1024px) */
+@media (min-width: 1024px) {
+    .container {
+        padding-left: 2rem; /* Equivalente a lg:px-8 */
+        padding-right: 2rem; /* Equivalente a lg:px-8 */
+    }
+     .main-nav > a + a {
+        margin-left: 2rem; /* Equivalente a lg:space-x-8 */
+    }
+}

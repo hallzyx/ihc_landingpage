@@ -252,3 +252,74 @@ body {
   height: 450px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
+.download-section {
+  background-color: #94DDC6;
+  padding: 40px 0;
+}
+
+.download-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.download-left,
+.download-right {
+  text-align: center;
+  max-width: 400px;
+}
+
+.download-left h3 {
+  margin-bottom: 10px;
+}
+
+.qr {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.celular-img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.pasos {
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.8;
+  padding: 0 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .download-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .download-left,
+  .download-right {
+    max-width: 100%;
+  }
+
+  .qr {
+    width: 120px;
+    height: 120px;
+  }
+
+  .celular-img {
+    width: 220px;
+  }
+
+  .pasos {
+    font-size: 1em;
+  }
+}

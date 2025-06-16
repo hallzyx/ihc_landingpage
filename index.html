@@ -39,7 +39,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
-    <script defer src="./script.js"></script>
+    <script defer src="./scripts/script.js"></script>
     <title>DiaLearn</title>
 </head>
 
@@ -128,11 +128,143 @@
                 </p>
             </div>
         </div>
-    </section>
+    </section>    <!--Testimonials-->
+     <section class="testimonials">
+        <h2 class="testimonials-title">Testimonios</h2>
+        <div class="testimonials-container">
+            <!-- Botón anterior -->
+            <button class="testimonial-nav-btn testimonial-prev" id="prevBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
 
-    <!--Testimonials-->
-    <section class="testimonials">
+            <!-- Contenedor de testimonios -->
+            <div class="testimonials-wrapper">
+                <div class="testimonials-track" id="testimonialsTrack"> <!-- Testimonio 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <div class="testimonial-avatar-letter">F</div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                Tras usar Diallearn en un par de sesiones de clases puedo notar una mejora en mi
+                                eficiencia para aprender. El material generado por mis notas resumen perfectamente lo
+                                que debo aprender
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Francis Bellick</h4>
+                                <p>Estudiante de 6to ciclo</p>
+                                <p class="testimonial-university">UPC</p>
+                            </div>
+                        </div>
+                    </div> <!-- Testimonio 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <div class="testimonial-avatar-letter">J</div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                Excelente aplicación! No tengo que hacer muchos pasos para poder subir mi material
+                                capturado en clases y organizarlo. Y el nuevo material resumido es una locura!
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Joseph Parker</h4>
+                                <p>Estudiante de 10mo ciclo</p>
+                                <p class="testimonial-university">UPN</p>
+                            </div>
+                        </div>
+                    </div> <!-- Testimonio 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <div class="testimonial-avatar-letter">R</div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                Lo que me encanta de esta app es que adapta el material a un entorno en el que me
+                                facilita mi aprendizaje. Es una locura
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Ramona Wayne</h4>
+                                <p>Estudiante de 5to ciclo</p>
+                                <p class="testimonial-university">UCV</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Testimonio 4 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <div class="testimonial-avatar-letter">A</div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                DiaLearn ha revolucionado mi forma de estudiar. Ya no pierdo tiempo organizando mis
+                                apuntes manualmente. La IA es increíblemente precisa y me ayuda a enfocarme en lo que
+                                realmente importa.
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Ana García</h4>
+                                <p>Estudiante de 8vo ciclo</p>
+                                <p class="testimonial-university">UNMSM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 5 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <div class="testimonial-avatar-letter">M</div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                Como estudiante de ingeniería, tengo muchas materias complicadas. Esta app me permite
+                                tener todo organizado automáticamente por horarios. ¡Es genial para repasar antes de los
+                                exámenes!
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Miguel Torres</h4>
+                                <p>Estudiante de 7mo ciclo</p>
+                                <p class="testimonial-university">PUCP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 6 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <div class="testimonial-avatar-letter">S</div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                Increíble cómo la inteligencia artificial puede transformar mis fotos de clase en
+                                material de estudio estructurado. Definitivamente recomiendo DiaLearn a todos mis
+                                compañeros.
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Sofia Mendoza</h4>
+                                <p>Estudiante de 4to ciclo</p>
+                                <p class="testimonial-university">USIL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón siguiente -->
+            <button class="testimonial-nav-btn testimonial-next" id="nextBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Botón de acción -->
+        <div class="testimonials-cta">
+            <button class="testimonials-cta-btn">No esperes más!</button>
+        </div>
     </section>
     <!--Testimonials-->
 

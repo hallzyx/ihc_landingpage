@@ -157,6 +157,80 @@ body {
     border-width: 0;
 }
 
+/* Inicio Sección Hero */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #94DDC6;
+    width: 100%;
+
+    .hero-images-container{ 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        flex-direction: row;
+
+        .hero-image {
+            max-width: 700px;
+            max-height: 600px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .hero-image-2{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        } 
+    }
+
+    .hero-content-container {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .hero-title-container {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero-paragraph-container {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .hero-button-container {
+            button{
+                background-color: #162954;
+                border: none;
+                padding: 10px 20px;
+                font-family: 'Kanit', sans-serif;
+                font-size: 1.2rem;
+                color: white;
+                cursor: pointer;
+                border-radius: 10px;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #4767B0;
+                }    
+            }
+        }
+    }
+
+}
+/* Fin Sección Hero */
+
+
 /* Diseño Responsivo (Media Queries) */
 /* Breakpoint sm (640px) */
 @media (min-width: 640px) {
@@ -543,3 +617,69 @@ footer {
 .footer-social-icon-img {
 	width: 32px;
 }
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 20px;
+
+        .hero-images-container {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .hero-content-container {
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 100%;
+
+            .hero-title-container,
+            .hero-paragraph-container,
+            .hero-button-container {
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* Inicio Responsiveness para Sección Hero*/
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 20px;
+
+        .hero-images-container {
+            flex-direction: row;
+            align-items: center;
+
+            .hero-image {
+                max-width: 90vw;
+                max-height: 40vh;
+                padding: 10px 0;
+            }
+        }
+
+        .hero-content-container {
+            align-items: center;
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 100%;
+
+            .hero-title-container,
+            .hero-paragraph-container,
+            .hero-button-container {
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}
+/* Fin Responsiveness para Sección Hero*/

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
         content="Aplicación educativa que utiliza inteligencia artificial para generar material didáctico a partir de tus fotos, organizadas por horario académico.">
     <meta property="og:url" content="https://hallzyx.github.io/ihc_landingpage/">
     <meta property="og:site_name" content="DiaLearn">
-    <meta property="og:image" content="./assets/img/meta/thumbnail-rrss.webp">
+    <meta property="og:image" content="https://hallzyx.github.io/ihc_landingpage/assets/img/meta/thumbnail-rrss.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="es_ES">
@@ -31,11 +31,11 @@
     <meta name="twitter:title" content="DiaLearn - Convierte tus fotos en material didáctico con IA">
     <meta name="twitter:description"
         content="Aplicación educativa que utiliza IA para generar material didáctico a partir de tus fotos, organizadas por horario académico.">
-    <meta name="twitter:image" content="./assets/img/meta/thumbnail-rrss.webp">
+    <meta name="twitter:image" content="https://hallzyx.github.io/ihc_landingpage/assets/img/meta/thumbnail-rrss.webp">
     <meta name="twitter:site" content="@DiaLearnApp">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://hallzyx.github.io/ihc_landingpage/assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
@@ -56,13 +56,30 @@
 
                 <!-- Navegación de Escritorio -->
                 <nav class="main-nav">
-                    <a href="about-us.html" class="nav-link">Quienes somos</a>
-                    <a href="#" class="nav-link">Precios</a>
-                    <a href="#" class="nav-link">Convenios</a>
-                    <a href="#" class="nav-link">Blog</a>
-                    <a href="#" class="header-button">
+                    <a href="about-us.html" class="nav-link" data-i18n="nav.about">Quienes somos</a>
+                    <a href="#" class="nav-link" data-i18n="nav.pricing">Precios</a>
+                    <a href="#" class="nav-link" data-i18n="nav.partnerships">Convenios</a>
+                    <a href="#" class="nav-link" data-i18n="nav.blog">Blog</a>
+                    <a href="#" class="header-button" data-i18n="nav.download">
                         Descarga la App
                     </a>
+                    <!-- Selector de idioma -->
+                    <div class="language-selector">
+                        <button id="language-toggle" class="language-btn" aria-label="Cambiar idioma">
+                            <span id="current-lang">ES</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div id="language-dropdown" class="language-dropdown">
+                            <button class="language-option" data-lang="es">
+                                🇪🇸 Español
+                            </button>
+                            <button class="language-option" data-lang="en">
+                                🇺🇸 English
+                            </button>
+                        </div>
+                    </div>
                 </nav>
 
                 <!-- Botón de Menú Móvil -->
@@ -82,13 +99,22 @@
         <!-- Menú Móvil -->
         <div id="mobile-menu">
             <div class="mobile-menu-links">
-                <a href="about-us.html" class="nav-link">Quienes somos</a>
-                <a href="#" class="nav-link">Precios</a>
-                <a href="#" class="nav-link">Convenios</a>
-                <a href="#" class="nav-link">Blog</a>
-                <a href="#" class="header-button">
+                <a href="about-us.html" class="nav-link" data-i18n="nav.about">Quienes somos</a>
+                <a href="#" class="nav-link" data-i18n="nav.pricing">Precios</a>
+                <a href="#" class="nav-link" data-i18n="nav.partnerships">Convenios</a>
+                <a href="#" class="nav-link" data-i18n="nav.blog">Blog</a>
+                <a href="#" class="header-button" data-i18n="nav.download">
                     Descarga la App
                 </a>
+                <!-- Selector de idioma móvil -->
+                <div class="mobile-language-selector">
+                    <button class="language-option mobile-lang" data-lang="es">
+                        🇪🇸 Español
+                    </button>
+                    <button class="language-option mobile-lang" data-lang="en">
+                        🇺🇸 English
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -102,16 +128,16 @@
         </div>
         <div class="hero-content-container">
             <div class="hero-title-container">
-                <h1>Organiza tus apuntes sin esfuerzo</h1>
+                <h1 data-i18n="hero.title">Organiza tus apuntes sin esfuerzo</h1>
             </div>
             <div class="hero-paragraph-container">
-                <p>
+                <p data-i18n="hero.description">
                     Imagina una aplicación que, con solo una foto, clasifica automáticamente tus apuntes según el horario de tus clases.
                     Captura, organiza y revisa tus notas de cada curso fácilmente.<br>¡Libérate del desorden y accede a tus fotos cuando más lo necesites!
                 </p>
             </div>
             <div class="hero-button-container">
-                <button>Lo quiero</button>
+                <button data-i18n="hero.cta">Lo quiero</button>
             </div>
         </div>
     </section>
@@ -128,18 +154,18 @@
                     allowfullscreen></iframe>
             </div>
             <div class="video_text">
-                <h2>Tecnología educativa para estudiantes organizados</h2>
-                <p>
+                <h2 data-i18n="video.title">Tecnología educativa para estudiantes organizados</h2>
+                <p data-i18n="video.paragraph1">
                     En la era digital, los dispositivos móviles se han convertido en
                     aliados indispensables en el aprendizaje. Pero junto con su uso
                     surge un reto: gestionar eficazmente la gran cantidad de información
                     visual que los estudiantes recopilan en clase.
                 </p>
-                <p>
+                <p data-i18n="video.paragraph2">
                     Nuestra aplicación facilita este proceso al organizar
                     automáticamente tus fotos según tu horario escolar.
                 </p>
-                <p>
+                <p data-i18n="video.paragraph3">
                     ¡Conviértete en un estudiante más organizado, sin esfuerzo y con
                     todo al alcance de tu mano con DiaLearn!.
                 </p>
@@ -151,8 +177,8 @@
     <section class="features-section">
         <div class="features-container">
             <div class="features-header">
-                <h2>¿Por qué elegir DiaLearn?</h2>
-                <p>Descubre los beneficios que hacen de DiaLearn la mejor herramienta para organizar tu aprendizaje</p>
+                <h2 data-i18n="features.title">¿Por qué elegir DiaLearn?</h2>
+                <p data-i18n="features.subtitle">Descubre los beneficios que hacen de DiaLearn la mejor herramienta para organizar tu aprendizaje</p>
             </div>
             
             <div class="features-grid">
@@ -163,8 +189,8 @@
                             <path d="M9 11H15M9 15H15M17 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H12.5858C12.851 3 13.1054 3.10536 13.2929 3.29289L19.7071 9.70711C19.8946 9.89464 20 10.149 20 10.4142V19C20 20.1046 19.1046 21 18 21H17Z" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Organización Automática por Horarios</h3>
-                    <p>Nuestra IA clasifica automáticamente tus apuntes según tu horario académico. Sin esfuerzo manual, todos tus materiales estarán perfectamente organizados por asignatura y fecha.</p>
+                    <h3 data-i18n="features.feature1.title">Organización Automática por Horarios</h3>
+                    <p data-i18n="features.feature1.description">Nuestra IA clasifica automáticamente tus apuntes según tu horario académico. Sin esfuerzo manual, todos tus materiales estarán perfectamente organizados por asignatura y fecha.</p>
                 </div>
 
                 <!-- Beneficio 2: Conversión Inteligente -->
@@ -174,8 +200,8 @@
                             <path d="M9.75 17L9 20L12 18L15 20L14.25 17M3 13H21M5 17H19C20.1046 17 21 16.1046 21 15V6C21 4.89543 20.1046 4 19 4H5C3.89543 4 3 4.89543 3 6V15C3 16.1046 3.89543 17 5 17Z" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Conversión Inteligente a Material Didáctico</h3>
-                    <p>Transforma tus fotos de apuntes en material de estudio estructurado y fácil de revisar. La IA genera resúmenes, esquemas y contenido optimizado para tu aprendizaje.</p>
+                    <h3 data-i18n="features.feature2.title">Conversión Inteligente a Material Didáctico</h3>
+                    <p data-i18n="features.feature2.description">Transforma tus fotos de apuntes en material de estudio estructurado y fácil de revisar. La IA genera resúmenes, esquemas y contenido optimizado para tu aprendizaje.</p>
                 </div>
 
                 <!-- Beneficio 3: Acceso Rápido y Eficiente -->
@@ -185,8 +211,8 @@
                             <path d="M13 10V3L4 14H11L11 21L20 10H13Z" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Acceso Rápido cuando más lo Necesitas</h3>
-                    <p>Encuentra tus apuntes al instante. Sistema de búsqueda inteligente que te permite localizar cualquier contenido por materia, fecha o tema específico en segundos.</p>
+                    <h3 data-i18n="features.feature3.title">Acceso Rápido cuando más lo Necesitas</h3>
+                    <p data-i18n="features.feature3.description">Encuentra tus apuntes al instante. Sistema de búsqueda inteligente que te permite localizar cualquier contenido por materia, fecha o tema específico en segundos.</p>
                 </div>
             </div>
         </div>
@@ -195,7 +221,7 @@
 
     <!--Testimonials-->
      <section class="testimonials">
-        <h2 class="testimonials-title">Testimonios</h2>
+        <h2 class="testimonials-title" data-i18n="testimonials.title">Testimonios</h2>
         <div class="testimonials-container">
             <!-- Botón anterior -->
             <button class="testimonial-nav-btn testimonial-prev" id="prevBtn">
@@ -328,7 +354,7 @@
 
         <!-- Botón de acción -->
         <div class="testimonials-cta">
-            <button class="testimonials-cta-btn">No esperes más!</button>
+            <button class="testimonials-cta-btn" data-i18n="testimonials.cta">No esperes más!</button>
         </div>
     </section>
     <!--Testimonials-->
@@ -337,18 +363,18 @@
     <section class="download-section">
         <div class="download-container">
             <div class="download-left">
-                <h3>Descargar nuestra app en Play Store</h3>
+                <h3 data-i18n="download.playstore">Descargar nuestra app en Play Store</h3>
                 <img src="./assets/img/download/play-store.png" alt="QR play store image" class="qr">
-                <h3>O puedes descargarla en la App Store</h3>
+                <h3 data-i18n="download.appstore">O puedes descargarla en la App Store</h3>
                 <img src="./assets/img/download/app-store.png" alt="QR app store image" class="qr">
             </div>
 
             <div class="download-right">
                 <img src="./assets/img/download/qr-phone.png" alt="QR phone image" class="celular-img">
                 <ol class="pasos">
-                    <li>Escanea el código QR</li>
-                    <li>Descarga la aplicación en la app store</li>
-                    <li>¡Disfruta al máximo de DiaLearn!</li>
+                    <li data-i18n="download.step1">Escanea el código QR</li>
+                    <li data-i18n="download.step2">Descarga la aplicación en la app store</li>
+                    <li data-i18n="download.step3">¡Disfruta al máximo de DiaLearn!</li>
                 </ol>
             </div>
         </div>

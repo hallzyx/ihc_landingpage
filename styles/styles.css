@@ -1379,3 +1379,126 @@ footer {
 }
 
 /* Fin About Us Page Styles */
+
+/* Language Selector Styles */
+.language-selector {
+    position: relative;
+    margin-left: 1rem;
+}
+
+.language-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.language-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    min-width: 150px;
+    z-index: 1000;
+    display: none;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.language-dropdown.show {
+    display: block;
+}
+
+.language-option {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    background: white;
+    color: #374151;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+
+.language-option:hover {
+    background-color: #f3f4f6;
+}
+
+.language-option.active {
+    background-color: #162964;
+    color: white;
+}
+
+/* Mobile Language Selector */
+.mobile-language-selector {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.mobile-lang {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.mobile-lang:hover,
+.mobile-lang.active {
+    background: rgba(148, 221, 198, 0.3);
+    border-color: #94DDC6;
+}
+
+/* Responsive adjustments for language selector */
+@media (max-width: 1024px) {
+    .language-selector {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-language-selector {
+        flex-direction: column;
+    }
+    
+    .mobile-lang {
+        text-align: center;
+    }
+}
+
+/* Transition animations for i18n */
+.fade-transition {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.fade-transition.show {
+    opacity: 1;
+}
+
+/* Fin Language Selector Styles */

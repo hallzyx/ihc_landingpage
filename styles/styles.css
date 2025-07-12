@@ -948,3 +948,434 @@ footer {
     }
 }
 /* Fin Features Section */
+
+/* About Us Page Styles */
+
+/* Navigation Active State */
+.nav-link.active {
+    color: #94DDC6;
+    font-weight: 700;
+}
+
+/* About Hero Section */
+.about-hero {
+    background: linear-gradient(135deg, #162964 0%, #4767B0 100%);
+    padding: 120px 20px 80px 20px;
+    color: white;
+    text-align: center;
+}
+
+.about-hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #94DDC6;
+    margin-bottom: 20px;
+}
+
+.about-hero-description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #e2e8f0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    padding: 80px 20px;
+    background-color: #f8fafc;
+}
+
+.mission-vision-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: stretch;
+}
+
+.mission-card,
+.vision-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+    transform: translateY(-10px);
+    border-color: #94DDC6;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.mission-icon,
+.vision-icon {
+    margin: 0 auto 30px auto;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission-card h3,
+.vision-card h3 {
+    font-size: 2rem;
+    color: #162964;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.mission-card p,
+.vision-card p {
+    font-size: 1.1rem;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* Company Story Section */
+.company-story {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.story-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.story-text h2 {
+    font-size: 2.5rem;
+    color: #162964;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.story-text p {
+    font-size: 1.1rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.story-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f1f5f9;
+}
+
+.stat-item h4 {
+    font-size: 2rem;
+    color: #162964;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin: 0;
+}
+
+.story-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-placeholder {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Company Values Section */
+.company-values {
+    padding: 80px 20px;
+    background-color: #f8fafc;
+}
+
+.values-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.values-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.values-header h2 {
+    font-size: 2.5rem;
+    color: #162964;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.values-header p {
+    font-size: 1.25rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.value-card {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+    margin: 0 auto 24px auto;
+    width: 80px;
+    height: 80px;
+    background-color: #f1f5f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    color: #162964;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.value-card p {
+    font-size: 1rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* About CTA Section */
+.about-cta {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #162964 0%, #4767B0 100%);
+    color: white;
+    text-align: center;
+}
+
+.about-cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-cta h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-cta p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #e2e8f0;
+}
+
+.about-cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-primary,
+.cta-secondary {
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cta-primary {
+    background-color: #94DDC6;
+    color: #162964;
+    border: 2px solid #94DDC6;
+}
+
+.cta-primary:hover {
+    background-color: #7cc4a8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(148, 221, 198, 0.4);
+}
+
+.cta-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-secondary:hover {
+    background-color: white;
+    color: #162964;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design for About Us */
+@media (max-width: 1024px) {
+    .mission-vision-grid {
+        gap: 40px;
+    }
+    
+    .story-content {
+        gap: 40px;
+    }
+    
+    .values-grid {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 100px 15px 60px 15px;
+    }
+    
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .story-stats {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .about-cta h2 {
+        font-size: 2rem;
+    }
+    
+    .about-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-primary,
+    .cta-secondary {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero {
+        padding: 80px 10px 50px 10px;
+    }
+    
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .about-hero-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .mission-card,
+    .vision-card {
+        padding: 30px 20px;
+    }
+    
+    .mission-card h3,
+    .vision-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .story-text h2 {
+        font-size: 2rem;
+    }
+    
+    .values-header h2 {
+        font-size: 2rem;
+    }
+    
+    .value-card {
+        padding: 25px 20px;
+    }
+    
+    .about-cta {
+        padding: 60px 10px;
+    }
+    
+    .about-cta h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Fin About Us Page Styles */
